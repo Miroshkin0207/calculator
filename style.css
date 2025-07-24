@@ -1,0 +1,39 @@
+﻿body {
+    background-color: rgb(26, 26, 29);
+    color: white
+}
+
+button {
+    background-color: black;
+    color: rgb(19, 66, 142)
+}
+
+#back {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+h1 {
+    text-align: center
+}
+
+@media (min-width: 1200px) {
+    #back {
+        font-size: 40px
+    }
+
+    h1 {
+        font-size: 40px
+    }
+}
+
+@media (max-width: 1199px) {
+    #back {
+        font-size: 65px
+    }
+
+    h1 {
+        font-size: 55px
+    }
+}

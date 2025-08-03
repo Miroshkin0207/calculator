@@ -54,7 +54,7 @@ h1 {
 }
 
 #copy {
-    width: 325px;
+    width: 335px;
     position: absolute;
     right: 0;
     top: 50%;
@@ -93,4 +93,5 @@ h1 {
     h1 {
         font-size: 55px
     }
+
 }

@@ -46,7 +46,7 @@ h1 {
 }
 
 #copy {
-    width: 325px;
+    font-size: 55px;
     position: absolute;
     right: 0;
     top: 50%;
@@ -72,12 +72,16 @@ h1 {
     }
 
     .rect1 {
+        width: 300px;
+        height: 500px;
         position: absolute;
         bottom: 0;
         left: calc(50% - 250px)
     }
 
     .rect2 {
+        width: 200px;
+        height: 500px;
         position: absolute;
         bottom: 0;
         left: calc(50% + 50px)

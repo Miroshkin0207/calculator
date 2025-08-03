@@ -3,24 +3,18 @@
 }
 
 let output = document.querySelector(".output")
-let enteredChars = []
-let numCurrentChar = 0
 
 function inputChar(text) {
-    enteredChars.push(text.innerHTML)
-
-    for (; numCurrentChar < enteredChars.length; numCurrentChar++) {
-        output.innerHTML += enteredChars[numCurrentChar]
-    }
+    output.innerHTML += text.innerHTML
 }
 
 let result = ""
 function printResult() {
-    if (enteredChars.length > 0) {
+    if (output.innerHTML.length > 0) {
         let countSpecChars = 0
 
-        for (let i = 0; i < enteredChars.length; i++) {
-            let char = enteredChars[i]
+        for (let i = 0; i < output.innerHTML.length; i++) {
+            let char = output.innerHTML[i]
 
             switch (char) {
                 case "×":
@@ -33,13 +27,10 @@ function printResult() {
                     result = "Math.pow(" + result + ", "
                     countSpecChars++
                     break
-                case ",":
-                    result += "."
-                    break
                 case "√":
                     result += "Math.sqrt("
                     countSpecChars++
-                    break                   
+                    break
                 default:
                     result += char
                     break
@@ -51,28 +42,31 @@ function printResult() {
             countSpecChars--
         }
 
-        result = eval(result) 
-        enteredChars = []
-        for (let i = 0; i < result.length; i++) {
-            enteredChars.push(result[i])
+        let flag = true
+        try {
+            result = eval(result)
+        }
+        catch {
+            alert("Ошибка: некорректное выражение")
+            flag = false
         }
 
-        numCurrentChar = enteredChars.length
-        output.innerHTML = result
+        if (flag) {
+            output.innerHTML = result
+        }
+        result = ""
     }
 }
 
 function delLastChar() {
-    if (enteredChars.length >= 1) {
-        enteredChars.pop()
-        numCurrentChar--
-        output.innerHTML = output.innerHTML.replace(/.$/, "")
-    }   
+    output.innerHTML = output.innerHTML.replace(/.$/, "") 
 }
 
 function clearInput() {
     output.innerHTML = ""
     result = ""
-    numCurrentChar = 0
-    enteredChars = []
+}
+
+function copy() {
+    navigator.clipboard.writeText(output.innerHTML)
 }

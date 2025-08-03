@@ -23,27 +23,19 @@ h1 {
 .output {
     background-color: white;
     color: black;
-    font-size: 55px;
-    width: 1000px;
-    height: 70px;
     position: absolute;
     left: 50%;
-    top: 80px;
-    transform: translateX(-50%);
+    transform: translateX(-50%);  
     display: flex;
     align-items: center
 }
 
 .rect1 {
-    width: 300px;
-    height: 500px;
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(3, 1fr)
 }
 
 .rect2 {
-    width: 200px;
-    height: 500px;
     position: absolute;
     display: grid;
     grid-template: 1fr repeat(2, 1.5fr) 1fr / repeat(2, 1fr)
@@ -54,7 +46,7 @@ h1 {
 }
 
 #copy {
-    width: 335px;
+    width: 325px;
     position: absolute;
     right: 0;
     top: 50%;
@@ -70,8 +62,15 @@ h1 {
         font-size: 40px;
         position: relative;
         bottom: 15px
-    }  
-    
+    }
+
+    .output {
+        font-size: 55px;
+        width: 1000px;
+        height: 70px;
+        top: 80px
+    }
+
     .rect1 {
         position: absolute;
         bottom: 0;
@@ -94,4 +93,20 @@ h1 {
         font-size: 55px
     }
 
+    .output {
+        font-size: 75px;
+        width: 900px;
+        height: 250px;
+        top: 115px
+    }
+
+    .rect1 {
+        width: 450px;
+        height: 750px
+    }
+
+    .rect2 {
+        width: 300px;
+        height: 750px
+    }
 }

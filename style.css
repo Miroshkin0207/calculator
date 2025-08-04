@@ -23,10 +23,9 @@ h1 {
 .output {
     background-color: white;
     color: black;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);  
+    position: absolute; 
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center
 }
@@ -55,7 +54,7 @@ h1 {
     transform: translateY(-50%)
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
     #back {
         font-size: 40px
     }
@@ -66,9 +65,10 @@ h1 {
     }
 
     .output {
-        min-width: 700px;
+        min-width: 1000px;
         height: 70px;
         font-size: 55px;
+        left: calc(50% - 500px);
         top: 80px
     }
 
@@ -103,9 +103,10 @@ h1 {
 
     .output {
         font-size: 35px;
-        min-width: 300px;
+        min-width: 350px;
         height: 50px;
-        top: 90px
+        top: 90px;
+        left: calc(50% + 175px)
     }
 
     button {

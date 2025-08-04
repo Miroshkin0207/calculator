@@ -93,7 +93,7 @@ h1 {
 
 @media (max-width: 1199px) {
     #back {
-        font-size: 35px
+        font-size: 60px
     }
 
     h1 {
@@ -109,7 +109,7 @@ h1 {
     }
 
     button {
-        font-size: 35px
+        font-size: 55px
     }
 
     .rect1 {

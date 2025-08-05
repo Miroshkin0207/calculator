@@ -96,7 +96,7 @@ h1 {
 
 @media (max-width: 1199px) {
     #back {
-        font-size: 40px
+        font-size: 35px
     }
 
     h1 {
@@ -106,7 +106,7 @@ h1 {
 
     .output {
         font-size: 35px;
-        min-width: 350px;
+        min-width: 325px;
         height: 50px;
         top: 90px;
         left: calc(50% - 175px)

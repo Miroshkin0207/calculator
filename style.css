@@ -6,7 +6,7 @@
 
 button {
     background-color: black;
-    color: rgb(19, 66, 142)
+    color: rgb(19, 65, 142)
 }
 
 #back {
@@ -97,7 +97,7 @@ h1 {
 
 @media (max-width: 1199px) {
     #back {
-        font-size: 35px
+        font-size: 10px
     }
 
     h1 {

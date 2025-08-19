@@ -52,7 +52,7 @@ h1 {
     right: 0
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     #back {
         font-size: 40px
     }
@@ -95,22 +95,27 @@ h1 {
     }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 999px) {
     #back {
-        font-size: 10px
+        font-size: 30px
     }
 
     h1 {
         font-size: 30px;
-        top: 20px
+        top: 25px
     }
 
     .output {
         font-size: 35px;
         min-width: 330px;
         height: 50px;
-        top: 90px;
+        top: 95px;
         left: calc(50% - 165px)
+    }
+
+    #copy {
+        font-size: 30px;
+        top: 165px
     }
 
     button {
@@ -129,10 +134,5 @@ h1 {
         height: 400px;
         left: 60%;
         bottom: 0
-    }
-
-    #copy {
-        font-size: 30px;
-        top: 160px
-    }
+    } 
 }
